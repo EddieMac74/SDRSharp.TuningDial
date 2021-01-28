@@ -42,7 +42,7 @@ namespace SDRSharp.TuningDial
         public void LoadSettings()
         {
             gui.FrequencyDial.GlowColor = (IlluminationColor)Utils.GetIntSetting("TuningDial.FrequencyColor", 4);
-            gui.VolumeDial.GlowColor = (IlluminationColor)Utils.GetIntSetting("TuningDial.VoumeColor", 4);
+            gui.VolumeDial.GlowColor = (IlluminationColor)Utils.GetIntSetting("TuningDial.VolumeColor", 4);
             gui.SquelchDial.GlowColor = (IlluminationColor)Utils.GetIntSetting("TuningDial.SquelchColor", 4);
             gui.FilterBandwidthDial.GlowColor = (IlluminationColor)Utils.GetIntSetting("TuningDial.FiterBandwidthColor", 4);
             gui.ZoomDial.GlowColor = (IlluminationColor)Utils.GetIntSetting("TuningDial.ZoomColor", 4);
@@ -62,7 +62,7 @@ namespace SDRSharp.TuningDial
         public void SaveSettings()
         {
             Utils.SaveSetting("TuningDial.FrequencyColor", (int) gui.FrequencyDial.GlowColor);
-            Utils.SaveSetting("TuningDial.VoumeColor", (int)gui.VolumeDial.GlowColor);
+            Utils.SaveSetting("TuningDial.VolumeColor", (int)gui.VolumeDial.GlowColor);
             Utils.SaveSetting("TuningDial.SquelchColor",(int)gui.SquelchDial.GlowColor);
             Utils.SaveSetting("TuningDial.FiterBandwidthColor", (int)gui.FilterBandwidthDial.GlowColor);
             Utils.SaveSetting("TuningDial.ZoomColor", (int)gui.ZoomDial.GlowColor);
