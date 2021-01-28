@@ -10,15 +10,7 @@ using SDRSharp.Radio;
 namespace SDRSharp.TuningDial
 {
     public class TuningDialPlugin : ISharpPlugin, ISupportSettings
-    {
-        //Call order
-        //1 - Initialize
-        //2 - Loading Settings
-        //3 - Loading GUI << Also called when loaded;
-        //When SDR Closed
-        //1 - Save Settings
-        //2 - Close
-                
+    {               
         private ControlPanel gui;
         
         public UserControl Gui => (UserControl)gui;
